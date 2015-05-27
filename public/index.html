@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="bandAve">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="jquery.shadow.css">
+<head>
+	<title></title>
+</head>
+<body>
+<div class="nav">
+	<ul class="inlineLinks">
+		<a href="/">
+			<img class="logo" src="images/BandAveLogo-tran2.png">
+		</a>
+		<li class="inlineLink lessMargins loginDropdown">
+			<a class="link loginHover" href="">login</a>
+		</li>
+		<li class="inlineLink">
+			<a class="link" href="/signup">sign up</a>
+		</li>
+		<li class="inlineLink">
+			<a class="link" href="/trending">trending</a>
+		</li>
+		<li class="inlineLink">
+			<a class="link" href="/top">top artists</a>
+		</li>
+	</ul>
+	<div class="dropContent">
+		<a href="/user-login">
+			<div class="userDiv">
+				<p class="overlay userlay">users</p>
+				<img class="userIcon user" src="images/user.png">
+			</div>
+		</a>
+		<a href="/artist-login">
+			<div class="usersDiv">
+				<img class="userIcon users"src="images/users.png">
+				<p class="overlay userslay">artists</p>
+			</div>
+		</a>
+	</div>
+</div>
+<div class='view' ng-view>
+	
+</div>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="js/app.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.shadow.js"></script>
+<script src="js/controllers/homeCtrl.js"></script>
+<script src="js/controllers/signupCtrl.js"></script>
+</body>
+</html>
